@@ -252,6 +252,19 @@
       radial-gradient(circle at top left, #FDF6F0, transparent 40%),
       radial-gradient(circle at bottom right, #F7E7E1, transparent 40%);
   }
+	/* --- WATERMARK BACKGROUND --- */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('RUID06a42002479c4b3e8fc0f5bd2fe4c81e.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60vmin;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+  }
 
   /* Make sure text content sits above the particles */
   .hero-content {
@@ -411,7 +424,7 @@
               <path d="M30 60 Q38 64 44 60"/>
             </g>
             <ellipse cx="30" cy="26" rx="12" ry="7" fill="#FFFFFF" opacity="0.22"/>
-            <text x="42" y="50" text-anchor="middle" font-family="Playfair Display, serif" font-size="21" fill="#5A3F1C">V&amp;D</text>
+            <image href="RUID06a42002479c4b3e8fc0f5bd2fe4c81e.png" x="20" y="20" width="44" height="44" preserveAspectRatio="xMidYMid meet"/>
           </svg>
         </div>
       </div>
